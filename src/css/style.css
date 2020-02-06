@@ -206,6 +206,7 @@ img {
 .hero-list__image {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   border: 2px solid #ffd200;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,7 +217,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
   margin-right: 30px;
 }
 
