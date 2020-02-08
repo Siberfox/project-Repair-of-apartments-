@@ -1,0 +1,35 @@
+.benefits
+  &-list
+    display: flex
+    justify-content: space-between
+    &__item
+      background-color: $secondary-color
+      max-width: 370px
+      max-height: 410px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      overflow: hidden
+    &__title
+      display: block
+      margin: 25px
+      margin-bottom: 50px
+      font-size: 16px
+      line-height: 23px
+@media ( max-width: 1200px )
+  .benefits
+    &-list
+      &__item
+        max-width: 240px
+
+@media   ( max-width: 786px )
+  .benefits
+    &-list
+      flex-direction: column
+      align-items: center
+      &__item
+        max-width: 370px
+        margin-bottom: 30px
+      &__title
+        margin: 20px
+        margin-bottom: 30px
