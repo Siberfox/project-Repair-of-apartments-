@@ -49,7 +49,7 @@ li {
 
 @media (max-width: 1200px) {
   .container {
-    width: 800px;
+    width: 760px;
   }
 }
 
@@ -630,8 +630,9 @@ li {
 }
 
 .steps-list__arrow {
-  width: 72px;
   height: 25px;
+  position: relative;
+  top: -11px;
 }
 
 .steps-list__item {
@@ -672,12 +673,10 @@ li {
   line-height: 20px;
 }
 
-.steps-list__arrow {
-  position: relative;
-  top: -11px;
-}
-
 @media (max-width: 1200px) {
+  .steps-list__arrow {
+    height: 20px;
+  }
   .steps-list__item {
     max-width: 150px;
   }
