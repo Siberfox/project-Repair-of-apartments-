@@ -853,6 +853,7 @@ li {
 .brief__form {
   width: 50%;
   text-align: center;
+  padding-left: 200px;
 }
 
 .brief__input {
@@ -916,10 +917,6 @@ li {
   display: block;
   max-width: 400px;
   font-size: 18px;
-}
-
-.form {
-  padding-left: 200px;
 }
 
 .form__title {
@@ -1018,6 +1015,105 @@ li {
   }
   .form {
     padding-left: 0;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__title {
+  margin-top: 0;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 100px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+  margin-top: 5px;
+}
+
+.contacts-list__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts-list__phone {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .map {
+    position: static;
+    width: 100%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0;
+  }
+  .contacts-block {
+    padding-top: 65px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
